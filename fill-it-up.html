@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Fill It Up </title>
-        <link rel="stylesheet" type="text/css" href="styles/fill-it-up.css">
+        <title>Fill It Up</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" >    
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="styles/fill-it-up.css">
     </head>
     <body>
-    <canvas id="canvas" width="300" height="300">Your browser doesn't support canvas.</canvas>
-    <p>Click inside the box to create a circle. Fill in as much as you can.</p>
-    <p id="percentage">You've filled in nothing.</p>
-    <script src="js/fill-it-up.js"></script>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+            <img src="Fill_logo.jpg">
+    </div>
+    </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <canvas id="canvas" width="396" height="400">Your browser doesn't support canvas.</canvas>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <span class="h2" id="level">Level 1</span><span>&nbsp;&nbsp;</span>
+                <span class="h3 text-info" id="percentage">You've filled in nothing.</span>
+                <p class="text-left">Click inside the box to create a circle. Hold down the mouse button to make the circle grow. Fill in as much as you can. Level up at <span id="levelUpPercent">50</span>%!</p>
+                <p class="text-left" id="ballsLeft">You have X balls left.</p>
+                <p class="text-left" id="ballsUsed">On level X, you used X Balls.</p>
+                <button type="button" class="btn btn-info" id="saveButton">Save Score</button>
+                <button type="button" class="btn btn-info" id="resetButton">Reset</button>
+            </div>
+        </div>
+    </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="js/fill-it-up.js"></script>
     </body>
 </html>
